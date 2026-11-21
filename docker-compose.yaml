@@ -39,9 +39,9 @@ services:
     container_name : postgres
 
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: azerty
-      POSTGRES_DB: players_tracking
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
 
     ports: 
       - "5432:5432"
